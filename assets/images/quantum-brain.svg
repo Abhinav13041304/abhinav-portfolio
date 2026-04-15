@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <radialGradient id="brainGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b026ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#00f3ff"/>
+    </linearGradient>
+    <filter id="neonBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background glow -->
+  <circle cx="200" cy="200" r="150" fill="url(#brainGlow)" />
+
+  <!-- Outer Quantum Rings -->
+  <ellipse cx="200" cy="200" rx="140" ry="40" stroke="#4ade80" stroke-width="2" opacity="0.4" transform="rotate(30 200 200)"/>
+  <ellipse cx="200" cy="200" rx="140" ry="40" stroke="#00f3ff" stroke-width="2" opacity="0.4" transform="rotate(-30 200 200)"/>
+  <ellipse cx="200" cy="200" rx="140" ry="40" stroke="#b026ff" stroke-width="2" opacity="0.4" transform="rotate(90 200 200)"/>
+
+  <!-- AI Brain Nodes & Connections -->
+  <g filter="url(#neonBlur)" stroke="url(#lineColor)" stroke-width="2">
+    <!-- Left Hemisphere -->
+    <path d="M150 120 Q110 150 130 220 T200 280" fill="none"/>
+    <path d="M150 120 L165 170 L130 220" fill="none"/>
+    <path d="M165 170 L185 140 L200 200 L165 240 L200 280" fill="none"/>
+    
+    <!-- Right Hemisphere -->
+    <path d="M250 120 Q290 150 270 220 T200 280" fill="none"/>
+    <path d="M250 120 L235 170 L270 220" fill="none"/>
+    <path d="M235 170 L215 140 L200 200 L235 240 L200 280" fill="none"/>
+    
+    <!-- Center Core Connection -->
+    <line x1="200" y1="120" x2="200" y2="280" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Nodes (Dots) -->
+  <circle cx="150" cy="120" r="4" fill="#4ade80" />
+  <circle cx="250" cy="120" r="4" fill="#00f3ff" />
+  <circle cx="200" cy="120" r="5" fill="#b026ff" />
+  
+  <circle cx="165" cy="170" r="3" fill="#4ade80" />
+  <circle cx="235" cy="170" r="3" fill="#00f3ff" />
+  <circle cx="130" cy="220" r="4" fill="#4ade80" />
+  <circle cx="270" cy="220" r="4" fill="#00f3ff" />
+  
+  <circle cx="185" cy="140" r="3" fill="#b026ff" />
+  <circle cx="215" cy="140" r="3" fill="#b026ff" />
+  
+  <circle cx="165" cy="240" r="3" fill="#4ade80" />
+  <circle cx="235" cy="240" r="3" fill="#00f3ff" />
+  
+  <!-- Central Glowing Node -->
+  <circle cx="200" cy="200" r="10" fill="white" filter="url(#neonBlur)"/>
+  <circle cx="200" cy="200" r="6" fill="#00f3ff"/>
+  
+  <circle cx="200" cy="280" r="5" fill="#b026ff" />
+
+  <!-- Orbiting Quantum Particles -->
+  <circle cx="95" cy="140" r="5" fill="#4ade80" filter="url(#neonBlur)"/>
+  <circle cx="305" cy="260" r="5" fill="#00f3ff" filter="url(#neonBlur)"/>
+  <circle cx="200" cy="60" r="5" fill="#b026ff" filter="url(#neonBlur)"/>
+</svg>

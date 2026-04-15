@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <defs>
+    <radialGradient id="glowCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rocketBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="rocketShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="flameMain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="40%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="flameInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wingLeft" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="wingRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="flameGlow" x="-60%" y="-20%" width="220%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background glow -->
+  <ellipse cx="200" cy="260" rx="130" ry="130" fill="url(#glowCenter)"/>
+
+  <!-- === FLAME EXHAUST === -->
+  <g filter="url(#flameGlow)">
+    <!-- Outer flame -->
+    <ellipse cx="200" cy="370" rx="28" ry="55" fill="url(#flameMain)" opacity="0.7">
+      <animate attributeName="ry" values="55;65;50;60;55" dur="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.9;0.6;0.8;0.7" dur="0.6s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Inner flame -->
+    <ellipse cx="200" cy="360" rx="14" ry="35" fill="url(#flameInner)" opacity="0.9">
+      <animate attributeName="ry" values="35;42;30;38;35" dur="0.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Core spark -->
+    <ellipse cx="200" cy="350" rx="5" ry="12" fill="white" opacity="0.95">
+      <animate attributeName="ry" values="12;16;10;14;12" dur="0.4s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- === LEFT WING === -->
+  <path d="M178 290 L130 340 L160 320 L172 305 Z" fill="url(#wingLeft)" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M178 290 L145 330 L160 320 L172 305 Z" fill="#4c1d95" opacity="0.5"/>
+
+  <!-- === RIGHT WING === -->
+  <path d="M222 290 L270 340 L240 320 L228 305 Z" fill="url(#wingRight)" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M222 290 L255 330 L240 320 L228 305 Z" fill="#4c1d95" opacity="0.5"/>
+
+  <!-- === ROCKET BODY === -->
+  <path d="M200 90 C230 120 245 180 245 260 L245 310 C245 320 230 325 200 325 C170 325 155 320 155 310 L155 260 C155 180 170 120 200 90 Z"
+    fill="url(#rocketBody)"/>
+  <!-- Body shade -->
+  <path d="M200 90 C185 120 175 180 178 260 L178 310 C178 320 185 323 200 325 C185 323 175 318 175 310 L175 260 C175 180 183 120 200 90 Z"
+    fill="url(#rocketShade)"/>
+
+  <!-- Rocket nose highlight -->
+  <path d="M200 95 C210 120 218 155 220 190 C215 185 205 180 200 180 C195 180 185 185 180 190 C182 155 190 120 200 95 Z"
+    fill="white" opacity="0.12"/>
+
+  <!-- === WINDOW === -->
+  <circle cx="200" cy="210" r="28" fill="#0f172a" stroke="#818cf8" stroke-width="2.5" filter="url(#softGlow)"/>
+  <circle cx="200" cy="210" r="22" fill="#1e1b4b"/>
+  <circle cx="200" cy="210" r="18" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.7"/>
+  <!-- Window glow -->
+  <circle cx="200" cy="210" r="14" fill="#0ea5e9" opacity="0.15"/>
+  <!-- Window reflection -->
+  <ellipse cx="194" cy="204" rx="6" ry="4" fill="white" opacity="0.25" transform="rotate(-30 194 204)"/>
+  <!-- Code symbol in window -->
+  <text x="200" y="216" text-anchor="middle" font-family="monospace" font-size="14" fill="#67e8f9" opacity="0.9" filter="url(#softGlow)">&lt;/&gt;</text>
+
+  <!-- === BODY DETAIL LINES === -->
+  <line x1="190" y1="240" x2="210" y2="240" stroke="#a5b4fc" stroke-width="1" opacity="0.5"/>
+  <line x1="185" y1="255" x2="215" y2="255" stroke="#a5b4fc" stroke-width="1" opacity="0.4"/>
+  <line x1="183" y1="270" x2="217" y2="270" stroke="#a5b4fc" stroke-width="1" opacity="0.3"/>
+
+  <!-- === NOZZLE === -->
+  <rect x="183" y="315" width="34" height="14" rx="4" fill="#312e81" stroke="#6d28d9" stroke-width="1.5"/>
+  <rect x="189" y="318" width="22" height="8" rx="2" fill="#1e1b4b"/>
+
+  <!-- === FLOATING CODE ELEMENTS === -->
+  <!-- Left bracket -->
+  <text x="80" y="180" font-family="monospace" font-size="22" fill="#38bdf8" opacity="0.7" filter="url(#softGlow)">{</text>
+  <text x="80" y="210" font-family="monospace" font-size="13" fill="#a5b4fc" opacity="0.5">fn()</text>
+  <text x="80" y="235" font-family="monospace" font-size="22" fill="#38bdf8" opacity="0.7" filter="url(#softGlow)">}</text>
+
+  <!-- Right elements -->
+  <text x="295" y="165" font-family="monospace" font-size="13" fill="#34d399" opacity="0.6">&lt;html&gt;</text>
+  <text x="300" y="195" font-family="monospace" font-size="11" fill="#a5b4fc" opacity="0.5">const x=</text>
+  <text x="300" y="218" font-family="monospace" font-size="13" fill="#f472b6" opacity="0.6">async</text>
+  <text x="295" y="245" font-family="monospace" font-size="11" fill="#34d399" opacity="0.5">&#10095;&#10095;</text>
+
+  <!-- Stars / particles around rocket -->
+  <circle cx="110" cy="130" r="2" fill="#c4b5fd" opacity="0.8" filter="url(#softGlow)">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="290" cy="120" r="2.5" fill="#67e8f9" opacity="0.7" filter="url(#softGlow)">
+    <animate attributeName="opacity" values="0.7;0.1;0.7" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="300" r="1.5" fill="#f472b6" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="275" cy="310" r="2" fill="#818cf8" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.15;0.7" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="95" cy="240" r="1.5" fill="#34d399" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.05;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="315" cy="260" r="2" fill="#fbbf24" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="1.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Small circuit dots -->
+  <circle cx="155" cy="165" r="3" fill="#7c3aed" opacity="0.5"/>
+  <circle cx="245" cy="165" r="3" fill="#7c3aed" opacity="0.5"/>
+  <line x1="155" y1="165" x2="145" y2="155" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <circle cx="145" cy="155" r="2" fill="#38bdf8" opacity="0.5"/>
+  <line x1="245" y1="165" x2="258" y2="155" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <circle cx="258" cy="155" r="2" fill="#38bdf8" opacity="0.5"/>
+</svg>

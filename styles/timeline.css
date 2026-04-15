@@ -1,0 +1,290 @@
+/* ====== Timeline Section ====== */
+.container-timeline {
+  width: 100vw;
+  padding: 64px 0;
+}
+
+.timeline {
+  padding: 0 var(--padding);
+  scroll-margin-top: 6rem;
+}
+
+/* --- Section Header --- */
+.timeline__sublabel {
+  text-align: center;
+  font-family: 'QuirkyRobot', sans-serif;
+  font-size: 0.85rem;
+  color: #00bcd4;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 0.5rem;
+}
+
+.timeline__heading {
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'QuirkyRobot', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.4375rem;
+  margin-bottom: 0.5rem;
+  color: #00bcd4;
+}
+
+.timeline__heading .accent {
+  color: #b44aff;
+}
+
+.timeline__underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00bcd4;
+  margin: 0 auto 3rem;
+  border-radius: 2px;
+}
+
+/* --- Legend --- */
+.timeline__legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timeline__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Centra', sans-serif;
+  font-size: 0.85rem;
+  color: #8b9ab0;
+  letter-spacing: 0.05em;
+}
+
+.timeline__legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.timeline__legend-dot--edu {
+  background: #00bcd4;
+  box-shadow: 0 0 6px rgba(0, 188, 212, 0.5);
+}
+
+.timeline__legend-dot--exp {
+  background: #b44aff;
+  box-shadow: 0 0 6px rgba(180, 74, 255, 0.5);
+}
+
+/* --- Timeline Spine Container --- */
+.timeline__track {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
+
+/* Center spine line */
+.timeline__track::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #1e2d3a 10%, #1e2d3a 90%, transparent);
+}
+
+/* --- Timeline Entry --- */
+.timeline__entry {
+  position: relative;
+  width: 50%;
+  padding: 0 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Left entry (odd / first) */
+.timeline__entry--left {
+  left: 0;
+  text-align: right;
+}
+
+/* Right entry (even / second) */
+.timeline__entry--right {
+  left: 50%;
+  text-align: left;
+}
+
+/* --- Dot on the spine --- */
+.timeline__dot {
+  position: absolute;
+  top: 1.5rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline__entry--left .timeline__dot {
+  right: -7px;
+}
+
+.timeline__entry--right .timeline__dot {
+  left: -7px;
+}
+
+.timeline__dot--edu {
+  background: #00bcd4;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6), 0 0 20px rgba(0, 188, 212, 0.2);
+}
+
+.timeline__dot--exp {
+  background: #b44aff;
+  box-shadow: 0 0 10px rgba(180, 74, 255, 0.6), 0 0 20px rgba(180, 74, 255, 0.2);
+}
+
+/* --- Card --- */
+.timeline__card {
+  background: #111827;
+  border: 1px solid #1e2d3a;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.timeline__date {
+  font-family: 'QuirkyRobot', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+}
+
+.timeline__date--edu {
+  color: #00bcd4;
+}
+
+.timeline__date--exp {
+  color: #b44aff;
+}
+
+.timeline__title {
+  font-family: 'Centra', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.timeline__org {
+  font-family: 'Centra', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline__org--edu {
+  color: #00bcd4;
+}
+
+.timeline__org--exp {
+  color: #b44aff;
+}
+
+.timeline__desc {
+  font-family: 'Centra', sans-serif;
+  font-size: 0.875rem;
+  color: #8b9ab0;
+  line-height: 1.7;
+}
+
+/* --- CGPA Badge --- */
+.timeline__card--with-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.timeline__card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline__badge {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  border-left: 1px solid #1e2d3a;
+}
+
+.timeline__badge-value {
+  font-family: 'QuirkyRobot', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00e676;
+  line-height: 1;
+}
+
+.timeline__badge-label {
+  font-family: 'Centra', sans-serif;
+  font-size: 0.65rem;
+  color: #5a6a7a;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+  white-space: nowrap;
+}
+
+
+/* ====== Responsive: Mobile / Tablet ====== */
+@media screen and (max-width: 768px) {
+  .timeline__heading {
+    font-size: 3rem;
+  }
+
+  /* Spine moves to the far left */
+  .timeline__track::before {
+    left: 20px;
+    transform: none;
+  }
+
+  /* All entries stack to the left */
+  .timeline__entry {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  /* Dots align to the left spine */
+  .timeline__entry--left .timeline__dot,
+  .timeline__entry--right .timeline__dot {
+    left: 13px;
+    right: auto;
+  }
+}
+
+@media screen and (min-width: 31.25rem) {
+  .timeline__heading {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 55rem) {
+  .container-timeline {
+    padding: 96px 0;
+  }
+}

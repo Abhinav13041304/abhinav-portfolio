@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Abhinav" />
+  <title>Abhinav - Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="./javascript/main.js"></script>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+</head>
+
+<body>
+  <div id="loader" class="zoomIn">
+    <div class="spinner-box">
+      <div class="blue-orbit leo"></div>
+
+      <div class="green-orbit leo"></div>
+
+      <div class="red-orbit leo"></div>
+
+      <div class="white-orbit w1 leo"></div>
+      <div class="white-orbit w2 leo"></div>
+      <div class="white-orbit w3 leo"></div>
+    </div>
+  </div>
+
+  <div id="container">
+    <!-- <div class="cursor">
+        <div class="cursor__border"></div>
+      </div> -->
+
+    <nav class="nav">
+      <div class="wrapper">
+        <section class="nav__mobile">
+          <a href="#hero"><img class="nav__img" src="./assets/images/logo-aa.svg" alt="logo"
+              style="width: 65px; height: auto" /></a>
+          <aside class="nav__hamburger">
+            <i class="nav__hamburger-icon fa-solid fa-bars"></i>
+            <i class="nav__hamburger-close fa-solid fa-xmark"></i>
+          </aside>
+        </section>
+
+        <section class="nav__desktop">
+          <aside>
+            <a href="#hero"><img class="nav__img link hidden fromTop" src="./assets/images/logo-aa.svg" alt="logo"
+                style="width: 75px; height: auto" /></a>
+          </aside>
+          <section class="nav__desktop-links">
+            <a class="desktop-hero active-link link hidden fromTop" href="#hero"><i class="fa-solid fa-house"></i>
+              Home</a>
+            <a class="desktop-about link hidden fromTop" href="#about"><i class="fa-solid fa-user"></i> About</a>
+            <a class="desktop-timeline link hidden fromTop" href="#timeline"><i class="fa-solid fa-clock"></i>
+              Timeline</a>
+            <a class="desktop-projects link hidden fromTop" href="#projects"><i class="fa-solid fa-diagram-project"></i>
+              Projects</a>
+            <a class="desktop-skills link hidden fromTop" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+          </section>
+          <article class="nav__desktop-socials">
+            <a class="link hidden fromTop" href="https://www.linkedin.com/in/abhinavaashish/" target="_blank"
+              aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="link hidden fromTop" href="https://github.com/Abhinav13041304" target="_blank" aria-label="Github"
+              title="Github"><i class="fa-brands fa-github"></i></a>
+          </article>
+          <a class="link hidden fromTop" href="./assets/cv.pdf" area-label="Resume" title="Resume"
+            target="_blank"><button class="button button--secondary link hidden fromTop">Resume</button></a>
+        </section>
+      </div>
+    </nav>
+
+    <aside class="sidebar-mobile">
+      <ul class="sidebar-mobile__list">
+        <li>
+          <a class="sidebar-mobile__item mobile-hero active-link" href="#hero"><i class="fa-solid fa-house"></i>
+            Home</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-about" href="#about"><i class="fa-solid fa-user"></i> About</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-timeline" href="#timeline"><i class="fa-solid fa-clock"></i>
+            Timeline</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-projects" href="#projects"><i class="fa-solid fa-diagram-project"></i>
+            Projects</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-skills" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="https://www.linkedin.com/in/abhinavaashish/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i>LinkedIn</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item" href="https://github.com/Abhinav13041304" target="_blank"><i
+              class="fa-brands fa-github"></i> Github</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-contact" href="#contact"><i class="fa-solid fa-address-card"></i>
+            Contact</a>
+        </li>
+        <li>
+          <a class="sidebar-mobile__item mobile-contact" href="./assets/cv.pdf" target="_blank"><i
+              class="fa-solid fa-file"></i> Resume</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <section class="landing">
+        <img src="./assets/images/background.png" class="background" alt="" />
+        <img src="./assets/images/foreground.png" class="foreground" alt="" />
+
+        <div class="hero-container" id="hero">
+          <div class="wrapper">
+            <section class="hero">
+              <section class="hero__left">
+                <div class="contact__availability link hidden fromTop" style="margin-bottom: 1rem; width: fit-content;">
+                  <span class="availability-dot"></span>
+                  AVAILABLE FOR NEW OPPORTUNITIES
+                </div>
+                <section class="hero__heading-background prevent-select link hidden fromTop">
+                  <h1 class="hero__heading">Hi, I'm Abhinav!</h1>
+                </section>
+                <div id="typed-strings">
+                  <p>A <span class="hero__fullstack">Full-Stack</span> Developer</p>
+                  <p>An <span class="hero__frontend">AI Powered</span> Builder</p>
+                  <p>A <span class="hero__backend">Quantum</span> Explorer</p>
+                  <p>Your <span class="hero__next">Next</span> Colleague</p>
+                </div>
+                <div class="typed-container prevent-select link hidden fromTop">
+                  <span id="typed"></span>
+                </div>
+                <p class="hero__paragraph link hidden fromTop">
+                  A Fullstack Web Developer at the intersection of AI, quantum computing, and human curiosity, shipping
+                  tools that bridge the gap between complex research and everyday understanding.
+                </p>
+                <a href="#contact" class="hero__contact-btn">
+                  <button class="button hero__button link hidden fromTop">
+                    Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </section>
+              <article class="hero__right">
+                <img class="hero__astronaut" src="./assets/images/rocket-dev.svg" alt="developer rocket" />
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-about">
+        <div class="wrapper">
+          <section class="about" id="about">
+            <h2 class="about__heading">About Me</h2>
+            <div class="about__wrapper">
+              <article class="about__content hidden fromLeft">
+                <h3 class="about__title">Abhinav Aashish</h3>
+                <p class="about__subtitle">Computer Science · BMSIT<span
+                    style="font-family: 'Centra', sans-serif;">&amp;</span>M · Bengaluru</p>
+                <p class="about__paragraph">I build at the intersection of AI, full-stack development, and quantum
+                  computing, focusing on problems where the tools don't exist yet, so I have to make them.</p>
+                <p class="about__paragraph">My work ranges from PaperLens, a live AI tool that transforms dense research
+                  papers into summaries, flowcharts and concept maps to a browser-based quantum circuit visualiser
+                  that makes gate operations and state vectors visual and intuitive.</p>
+                <p class="about__paragraph">Currently open to research and engineering internships where I can
+                  contribute to meaningful, technically challenging work.</p>
+              </article>
+              <article class="about__graphic hidden fromRight">
+                <img src="./assets/images/quantum-brain.svg" alt="Quantum Brain AI Graphic" class="about__graphic-svg"
+                  loading="lazy" />
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container-timeline">
+        <div class="wrapper">
+          <section class="timeline" id="timeline">
+            <h2 class="timeline__heading hidden fromTop">Tim<span class="accent">eli</span>ne</h2>
+            <span class="timeline__underline hidden fromTop"></span>
+
+            <div class="timeline__legend hidden fromTop">
+              <div class="timeline__legend-item">
+                <div class="timeline__legend-dot timeline__legend-dot--edu"></div> Education
+              </div>
+              <div class="timeline__legend-item">
+                <div class="timeline__legend-dot timeline__legend-dot--exp"></div> Experience
+              </div>
+            </div>
+
+            <div class="timeline__track">
+              <!-- Entry 1 -->
+              <div class="timeline__entry timeline__entry--left hidden fromLeft">
+                <div class="timeline__dot timeline__dot--exp"></div>
+                <div class="timeline__card" style="text-align: left;">
+                  <p class="timeline__date timeline__date--exp">2025 - PRESENT</p>
+                  <h3 class="timeline__title">Personal Projects &amp; Open Source</h3>
+                  <p class="timeline__org timeline__org--exp">Independent Developer</p>
+                  <ul class="timeline__desc" style="padding-left: 1.2rem; list-style-type: disc;">
+                    <li>Built and deployed PaperLens (AI research simplifier) and Quantum Circuit Visualiser from scratch</li>
+                    <li>Consistent GitHub commit streak with active open source contributions</li>
+                    <li>Independently exploring AI/ML, NLP, and quantum computing beyond coursework</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Entry 1.25 -->
+              <div class="timeline__entry timeline__entry--left hidden fromLeft">
+                <div class="timeline__dot timeline__dot--exp"></div>
+                <div class="timeline__card" style="text-align: left;">
+                  <p class="timeline__date timeline__date--exp">2025</p>
+                  <h3 class="timeline__title">TrendHub &mdash; Research Paper</h3>
+                  <p class="timeline__org timeline__org--exp">BMS Institute of Technology and Management</p>
+                  <ul class="timeline__desc" style="padding-left: 1.2rem; list-style-type: disc;">
+                    <li>Co-authored a research paper on TrendHub under Prof. Jagadish P, BMSIT</li>
+                    <li>Built NLP pipeline using Sentence-BERT, K-Means clustering, and composite trend scoring across NewsAPI, Twitter/X, and Reddit</li>
+                    <li>Achieved 92% precision, 88% recall, and sub-second latency on 1,000+ articles</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Entry 1.5 -->
+              <div class="timeline__entry timeline__entry--right hidden fromRight">
+                <div class="timeline__dot timeline__dot--edu"></div>
+                <div class="timeline__card" style="text-align: left;">
+                  <p class="timeline__date timeline__date--edu">2024 - PRESENT</p>
+                  <h3 class="timeline__title">Continuous Learning &amp; Certifications</h3>
+                  <p class="timeline__org timeline__org--edu">Coursera, Google, Independent</p>
+                  <ul class="timeline__desc" style="padding-left: 1.2rem; list-style-type: disc;">
+                    <li>Certified in Machine Learning Specialization (Stanford &amp; DeepLearning.AI), Google Cloud Computing Foundations, and Agile Development</li>
+                    <li>Self-studied Full Stack Web Development and DSA with Java through independent online courses</li>
+                    <li>Consistently upskilling across AI/ML, cloud, and software engineering to complement core coursework</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Entry 2 -->
+              <div class="timeline__entry timeline__entry--right hidden fromRight">
+                <div class="timeline__dot timeline__dot--edu"></div>
+                <div class="timeline__card timeline__card--with-badge" style="text-align: left;">
+                  <div class="timeline__card-content">
+                    <p class="timeline__date timeline__date--edu">2023 - PRESENT</p>
+                    <h3 class="timeline__title">B.E. Computer Science Engineering</h3>
+                    <p class="timeline__org timeline__org--edu">BMS Institute of Technology and Management</p>
+                    <ul class="timeline__desc" style="padding-left: 1.2rem; list-style-type: disc;">
+                      <li>Core coursework in DSA, DBMS, Operating Systems, Computer Networks, OOP, and Web Technologies</li>
+                      <li>Maintaining a CGPA of 8.5/10 while building real-world projects in AI, quantum computing, and full-stack development</li>
+                    </ul>
+                  </div>
+                  <div class="timeline__badge">
+                    <span class="timeline__badge-value">8 . 5</span>
+                    <span class="timeline__badge-label">CGPA / 10</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Entry 3 -->
+              <div class="timeline__entry timeline__entry--left hidden fromLeft">
+                <div class="timeline__dot timeline__dot--exp"></div>
+                <div class="timeline__card" style="text-align: left;">
+                  <p class="timeline__date timeline__date--exp">2021 - PRESENT</p>
+                  <h3 class="timeline__title">Online Community Management</h3>
+                  <p class="timeline__org timeline__org--exp">Independent</p>
+                  <ul class="timeline__desc" style="padding-left: 1.2rem; list-style-type: disc;">
+                    <li>Managing two active online communities of 4,000+ and 10,000+ members</li>
+                    <li>Overseeing moderation, engagement, and content planning to sustain community growth</li>
+                    <li>Building leadership and communication skills through consistent community management since 2021</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="container-projects">
+        <div class="wrapper">
+          <section class="projects" id="projects">
+            <h2 class="projects__heading">Projects</h2>
+            <article class="projects__project hidden fromRight">
+              <article class="projects__laptop-mockup">
+                <img src="./assets/videos/paperlens_demo_v2.gif" alt="paperlens demo" loading="lazy"
+                  style="width: 80%; height: auto; object-fit: cover; margin-left: auto; display: block; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.4);" />
+              </article>
+              <section class="projects__info">
+                <h3 class="projects__title">PAPERLENS</h3>
+                <p class="projects__paragraph">
+                  PaperLens is an AI-powered study tool that transforms any PDF into clear, interactive explanations.
+                  Upload a research paper or textbook and instantly get section-by-section summaries, auto-generated
+                  flowcharts, concept maps, and exam-style questions with answers.
+                </p>
+                <section class="all-skills__icons all-skills__icons--small">
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon python">
+                      <img src="./assets/images/icons/python.svg" alt="python" loading="lazy" />
+                    </article>
+                    <p>Python</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon express"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-flask" style="font-size: 24px; color: white;"></i>
+                    </article>
+                    <p>Flask</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon react">
+                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
+                    </article>
+                    <p>React</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon api">
+                      <img src="./assets/images/icons/api.svg" alt="api" loading="lazy" />
+                    </article>
+                    <p>Groq AI</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon ts"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-diagram-project" style="font-size: 24px; color: white;"></i>
+                    </article>
+                    <p>Mermaid.js</p>
+                  </section>
+                </section>
+                <section class="projects__buttons">
+                  <a href="https://paperlens-kappa.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Demo</button>
+                  </a>
+                  <a href="https://github.com/Abhinav13041304/research-paper-simplifier" target="_blank"
+                    rel="noopener noreferrer">
+                    <button class="button">Code</button>
+                  </a>
+                </section>
+              </section>
+            </article>
+            <article class="projects__project projects__project--reverse hidden fromLeft">
+              <article class="projects__laptop-mockup">
+                <img src="./assets/videos/qircuit_final.gif" alt="Qircuit quantum circuit simulator" loading="lazy"
+                  style="width: 80%; height: auto; object-fit: cover; margin-left: auto; display: block; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.4);" />
+              </article>
+              <section class="projects__info">
+                <h3 class="projects__title">QIRCUIT</h3>
+                <p class="projects__paragraph">
+                  A browser-based quantum computing simulator where you can build and simulate quantum circuits in real
+                  time. Place quantum gates on qubits, run the simulation, and instantly visualise probability
+                  amplitudes and measurement outcomes — no hardware or complex setup required.
+                </p>
+                <section class="all-skills__icons all-skills__icons--small">
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon react">
+                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
+                    </article>
+                    <p>React</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon js">
+                      <img src="./assets/images/icons/javascript.svg" alt="javascript" loading="lazy" />
+                    </article>
+                    <p>JavaScript</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon framer"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-cube" style="font-size: 24px; color: #cc12d8;"></i>
+                    </article>
+                    <p>Framer Motion</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon api"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-chart-bar" style="font-size: 24px; color: #38bdf8;"></i>
+                    </article>
+                    <p>Recharts</p>
+                  </section>
+                </section>
+                <section class="projects__buttons">
+                  <a href="https://qircuit-sim.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Demo</button>
+                  </a>
+                  <a href="https://github.com/Abhinav13041304/quantum-circuit-visualiser" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Code</button>
+                  </a>
+                </section>
+              </section>
+            </article>
+
+            <article class="projects__project projects__project--enginers hidden fromRight">
+              <article class="projects__laptop-mockup">
+                <img src="./assets/videos/quantumbench.gif" alt="Quantum Bench simulator" loading="lazy"
+                  style="width: 80%; height: auto; object-fit: cover; margin-left: auto; display: block; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.4);" />
+              </article>
+              <section class="projects__info projects__info--engineers">
+                <h3 class="projects__title">QUANTUM BENCH</h3>
+                <p class="projects__paragraph">
+                  Configure and run real-time simulations comparing Grover's algorithm against linear search, with dynamic charts and 3D visualizers powered by Qiskit Aer. No quantum hardware needed.
+                </p>
+                <section class="all-skills__icons all-skills__icons--small">
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon python">
+                      <img src="./assets/images/icons/python.svg" alt="python" loading="lazy" />
+                    </article>
+                    <p>Python</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon express"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-flask" style="font-size: 24px; color: white;"></i>
+                    </article>
+                    <p>Flask</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon qiskit"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-atom" style="font-size: 24px; color: white;"></i>
+                    </article>
+                    <p>Qiskit</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon js">
+                      <img src="./assets/images/icons/javascript.svg" alt="javascript" loading="lazy" />
+                    </article>
+                    <p>JavaScript</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon api"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-chart-pie" style="font-size: 24px; color: white;"></i>
+                    </article>
+                    <p>Chart.js</p>
+                  </section>
+                </section>
+                <section class="projects__buttons">
+                  <a href="https://abhinav13041304-quantum-vs-classical.hf.space/" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Demo</button>
+                  </a>
+                  <a href="https://github.com/Abhinav13041304/quantum-vs-classical" target="_blank" rel="noopener noreferrer">
+                    <button class="button">Code</button>
+                  </a>
+                </section>
+              </section>
+            </article>
+
+            <article class="projects__project project__your-project projects__your-project hidden fromLeft">
+              <article class="projects__laptop-mockup">
+                <svg width="680" height="420" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" style="width: 100%; height: auto; display: block;">
+                  <title>Your project illustration</title>
+                  <desc>A dark-themed illustration of a developer collaborating on a project, with floating UI cards showing code, design, and rocket launch elements.</desc>
+
+                  <defs>
+                    <linearGradient id="bggrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#0d1117"/>
+                      <stop offset="100%" stop-color="#0a0f1e"/>
+                    </linearGradient>
+                    <linearGradient id="screengrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#1a2035"/>
+                      <stop offset="100%" stop-color="#111827"/>
+                    </linearGradient>
+                    <linearGradient id="purpgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#7c3aed"/>
+                      <stop offset="100%" stop-color="#4f46e5"/>
+                    </linearGradient>
+                    <linearGradient id="ambergrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#f59e0b"/>
+                      <stop offset="100%" stop-color="#d97706"/>
+                    </linearGradient>
+                    <linearGradient id="tealgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#0ea5e9"/>
+                      <stop offset="100%" stop-color="#0284c7"/>
+                    </linearGradient>
+                  </defs>
+
+                  <style>
+                    @keyframes float1 { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-8px)} }
+                    @keyframes float2 { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-6px)} }
+                    @keyframes float3 { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-10px)} }
+                    @keyframes pulse  { 0%,100%{opacity:0.6} 50%{opacity:1} }
+                    @keyframes blink  { 0%,100%{opacity:1} 50%{opacity:0.2} }
+                    @keyframes orbit  { 0%{transform:rotate(0deg) translateX(22px) rotate(0deg)} 100%{transform:rotate(360deg) translateX(22px) rotate(-360deg)} }
+                    @keyframes dash   { to{stroke-dashoffset:-20} }
+                    .f1{animation:float1 4s ease-in-out infinite}
+                    .f2{animation:float2 5s ease-in-out infinite 0.8s}
+                    .f3{animation:float3 3.5s ease-in-out infinite 1.4s}
+                    .orb{animation:orbit 4s linear infinite}
+                    .pulse{animation:pulse 2s ease-in-out infinite}
+                    .blink{animation:blink 1.2s ease-in-out infinite}
+                    .dash{animation:dash 1.2s linear infinite}
+                  </style>
+
+                  <!-- Background removed for better integration -->
+
+                  <!-- Stars -->
+                  <circle cx="30" cy="25" r="1" fill="#fff" opacity="0.3"/>
+                  <circle cx="95" cy="60" r="1.2" fill="#fff" opacity="0.2"/>
+                  <circle cx="180" cy="15" r="0.9" fill="#fff" opacity="0.35"/>
+                  <circle cx="410" cy="30" r="1.1" fill="#fff" opacity="0.25"/>
+                  <circle cx="580" cy="18" r="1" fill="#fff" opacity="0.3"/>
+                  <circle cx="650" cy="55" r="1.3" fill="#fff" opacity="0.2"/>
+                  <circle cx="640" cy="370" r="1" fill="#fff" opacity="0.25"/>
+                  <circle cx="50" cy="380" r="1.2" fill="#fff" opacity="0.2"/>
+                  <circle cx="300" cy="400" r="0.9" fill="#fff" opacity="0.15"/>
+
+                  <!-- Grid lines subtle -->
+                  <line x1="0" y1="140" x2="680" y2="140" stroke="#1e2030" stroke-width="0.5"/>
+                  <line x1="0" y1="280" x2="680" y2="280" stroke="#1e2030" stroke-width="0.5"/>
+                  <line x1="170" y1="0" x2="170" y2="420" stroke="#1e2030" stroke-width="0.5"/>
+                  <line x1="510" y1="0" x2="510" y2="420" stroke="#1e2030" stroke-width="0.5"/>
+
+                  <!-- Central laptop body -->
+                  <g class="f1">
+                    <rect x="220" y="130" width="240" height="155" rx="8" fill="#1a2035" stroke="#2d3748" stroke-width="1.5"/>
+                    <rect x="230" y="140" width="220" height="120" rx="4" fill="#0d1117"/>
+                    <!-- Screen content: code lines -->
+                    <rect x="242" y="152" width="70" height="5" rx="2.5" fill="#7c3aed" opacity="0.8"/>
+                    <rect x="242" y="163" width="110" height="4" rx="2" fill="#1e3a5f" opacity="0.9"/>
+                    <rect x="252" y="173" width="80" height="4" rx="2" fill="#1e3a5f" opacity="0.7"/>
+                    <rect x="252" y="183" width="100" height="4" rx="2" fill="#0ea5e9" opacity="0.5"/>
+                    <rect x="242" y="193" width="60" height="4" rx="2" fill="#1e3a5f" opacity="0.7"/>
+                    <rect x="252" y="203" width="90" height="4" rx="2" fill="#f59e0b" opacity="0.4"/>
+                    <rect x="252" y="213" width="75" height="4" rx="2" fill="#1e3a5f" opacity="0.6"/>
+                    <rect x="242" y="223" width="55" height="4" rx="2" fill="#7c3aed" opacity="0.5"/>
+                    <!-- Cursor blink -->
+                    <rect x="300" y="233" width="2" height="10" rx="1" fill="#a78bfa" class="blink"/>
+                    <!-- Status bar -->
+                    <rect x="230" y="256" width="220" height="4" rx="0" fill="#111827"/>
+                    <rect x="230" y="256" width="80" height="4" rx="0" fill="#7c3aed" opacity="0.6"/>
+                    <circle cx="438" cy="258" r="3" fill="#22c55e" class="pulse"/>
+                    <!-- Laptop base -->
+                    <rect x="205" y="285" width="270" height="12" rx="4" fill="#1a2035" stroke="#2d3748" stroke-width="1"/>
+                    <rect x="290" y="285" width="100" height="5" rx="2" fill="#111827"/>
+                  </g>
+
+                  <!-- Floating card: code snippet (left) -->
+                  <g class="f2" transform="translate(0,0)">
+                    <rect x="38" y="155" width="148" height="90" rx="8" fill="#111827" stroke="#2d3748" stroke-width="1"/>
+                    <rect x="38" y="155" width="148" height="22" rx="8" fill="#1a2035"/>
+                    <rect x="38" y="169" width="148" height="8" rx="0" fill="#1a2035"/>
+                    <circle cx="52" cy="166" r="4" fill="#ef4444" opacity="0.8"/>
+                    <circle cx="64" cy="166" r="4" fill="#f59e0b" opacity="0.8"/>
+                    <circle cx="76" cy="166" r="4" fill="#22c55e" opacity="0.8"/>
+                    <rect x="50" y="185" width="50" height="4" rx="2" fill="#7c3aed" opacity="0.8"/>
+                    <rect x="58" y="195" width="80" height="4" rx="2" fill="#0ea5e9" opacity="0.6"/>
+                    <rect x="58" y="205" width="65" height="4" rx="2" fill="#f59e0b" opacity="0.5"/>
+                    <rect x="50" y="215" width="45" height="4" rx="2" fill="#7c3aed" opacity="0.6"/>
+                    <rect x="50" y="225" width="90" height="4" rx="2" fill="#1e3a5f" opacity="0.8"/>
+                    <!-- Dashed connector to laptop -->
+                    <line x1="186" y1="200" x2="220" y2="200" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" class="dash"/>
+                  </g>
+
+                  <!-- Floating card: metrics (right) -->
+                  <g class="f3" transform="translate(0,0)">
+                    <rect x="494" y="145" width="148" height="110" rx="8" fill="#111827" stroke="#2d3748" stroke-width="1"/>
+                    <text x="508" y="165" font-family="monospace" font-size="10" fill="#9ca3af" font-weight="500">Performance</text>
+                    <!-- Bar chart mini -->
+                    <rect x="508" y="210" width="16" height="30" rx="2" fill="#7c3aed" opacity="0.3"/>
+                    <rect x="508" y="220" width="16" height="20" rx="2" fill="#7c3aed" opacity="0.8"/>
+                    <rect x="530" y="210" width="16" height="30" rx="2" fill="#0ea5e9" opacity="0.3"/>
+                    <rect x="530" y="200" width="16" height="40" rx="2" fill="#0ea5e9" opacity="0.8"/>
+                    <rect x="552" y="210" width="16" height="30" rx="2" fill="#f59e0b" opacity="0.3"/>
+                    <rect x="552" y="215" width="16" height="25" rx="2" fill="#f59e0b" opacity="0.8"/>
+                    <rect x="574" y="210" width="16" height="30" rx="2" fill="#22c55e" opacity="0.3"/>
+                    <rect x="574" y="205" width="16" height="35" rx="2" fill="#22c55e" opacity="0.8"/>
+                    <!-- Speed indicator -->
+                    <rect x="508" y="178" width="118" height="8" rx="4" fill="#1e2030"/>
+                    <rect x="508" y="178" width="88" height="8" rx="4" fill="url(#purpgrad)" opacity="0.9"/>
+                    <text x="618" y="186" font-family="monospace" font-size="9" fill="#a78bfa" text-anchor="end">74%</text>
+                    <!-- Dashed connector to laptop -->
+                    <line x1="494" y1="200" x2="460" y2="200" stroke="#0ea5e9" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" class="dash"/>
+                  </g>
+
+                  <!-- Floating badge: rocket (top center) -->
+                  <g class="f1" transform="translate(0,-20)">
+                    <rect x="296" y="60" width="88" height="52" rx="10" fill="#111827" stroke="#7c3aed" stroke-width="1" opacity="0.9"/>
+                    <!-- Rocket shape -->
+                    <path d="M340 70 L336 82 L330 86 L336 88 L338 96 L340 92 L342 96 L344 88 L350 86 L344 82 Z" fill="#7c3aed" opacity="0.9"/>
+                    <circle cx="340" cy="78" r="3" fill="#c4b5fd"/>
+                    <!-- Fire -->
+                    <path d="M336 88 Q340 94 344 88" fill="#f59e0b" opacity="0.8"/>
+                    <line x1="340" y1="130" x2="340" y2="112" stroke="#7c3aed" stroke-width="1" stroke-dasharray="3 3" opacity="0.4" class="dash"/>
+                  </g>
+
+                  <!-- Floating pill: "available for hire" -->
+                  <g class="f2">
+                    <rect x="244" y="330" width="192" height="28" rx="14" fill="#111827" stroke="#22c55e" stroke-width="1"/>
+                    <circle cx="262" cy="344" r="5" fill="#22c55e" class="pulse"/>
+                    <text x="275" y="348" font-family="monospace" font-size="10" fill="#86efac" font-weight="600">Available for hire</text>
+                  </g>
+
+                  <!-- Skill pills floating around -->
+                  <g class="f3">
+                    <rect x="55" y="290" width="80" height="22" rx="11" fill="#1a0a3a" stroke="#7c3aed" stroke-width="1"/>
+                    <text x="95" y="305" text-anchor="middle" font-family="monospace" font-size="9" fill="#a78bfa">Python</text>
+                  </g>
+                  <g class="f1" style="animation-delay:0.3s">
+                    <rect x="55" y="320" width="80" height="22" rx="11" fill="#001a2e" stroke="#0ea5e9" stroke-width="1"/>
+                    <text x="95" y="335" text-anchor="middle" font-family="monospace" font-size="9" fill="#7dd3fc">React</text>
+                  </g>
+                  <g class="f2" style="animation-delay:0.6s">
+                    <rect x="55" y="350" width="80" height="22" rx="11" fill="#1a1000" stroke="#f59e0b" stroke-width="1"/>
+                    <text x="95" y="365" text-anchor="middle" font-family="monospace" font-size="9" fill="#fcd34d">Qiskit</text>
+                  </g>
+
+                  <!-- Right side skill pills -->
+                  <g class="f3" style="animation-delay:0.2s">
+                    <rect x="545" y="290" width="90" height="22" rx="11" fill="#001a2e" stroke="#0ea5e9" stroke-width="1"/>
+                    <text x="590" y="305" text-anchor="middle" font-family="monospace" font-size="9" fill="#7dd3fc">Full Stack</text>
+                  </g>
+                  <g class="f1" style="animation-delay:0.5s">
+                    <rect x="545" y="320" width="90" height="22" rx="11" fill="#001a0f" stroke="#22c55e" stroke-width="1"/>
+                    <text x="590" y="335" text-anchor="middle" font-family="monospace" font-size="9" fill="#86efac">Algorithms</text>
+                  </g>
+                  <g class="f2" style="animation-delay:1s">
+                    <rect x="545" y="350" width="90" height="22" rx="11" fill="#1a0a3a" stroke="#7c3aed" stroke-width="1"/>
+                    <text x="590" y="365" text-anchor="middle" font-family="monospace" font-size="9" fill="#a78bfa">Quantum</text>
+                  </g>
+
+                  <!-- Orbiting dot around laptop -->
+                  <g transform="translate(340,210)">
+                    <g class="orb">
+                      <circle r="3.5" fill="#7c3aed" opacity="0.9"/>
+                    </g>
+                  </g>
+
+
+                </svg>
+              </article>
+
+              <section class="projects__info projects__info--project">
+                <h3 class="projects__title">YOUR PROJECT</h3>
+                <p class="projects__paragraph">
+                  Are you looking for a dedicated and skilled professional to join your team or help with your next
+                  project? Look no further!
+                </p>
+                <a href="#contact"><button class="button">Contact Me</button></a>
+              </section>
+            </article>
+            <!-- <button class="button button--secondary projects__view-all">View All Projects</button> -->
+          </section>
+        </div>
+      </div>
+
+      <div class="container-skills">
+        <div class="wrapper">
+          <section class="skills" id="skills">
+            <h2 class="skills__heading">Skills</h2>
+
+            <section class="all-skills">
+              <article class="all-skills__skill all-skills__skill--frontend hidden fromRight">
+                <header class="all-skills__header">
+                  <h3>Frontend</h3>
+                </header>
+                <section class="all-skills__icons">
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon html5">
+                      <img src="./assets/images/icons/html.svg" alt="html" loading="lazy" />
+                    </article>
+                    <p>HTML5</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon css">
+                      <img src="./assets/images/icons/css3.svg" alt="css" loading="lazy" />
+                    </article>
+                    <p>CSS3</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon js">
+                      <img src="./assets/images/icons/javascript.svg" alt="javascript" loading="lazy" />
+                    </article>
+                    <p>Javascript</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon ts">
+                      <img src="./assets/images/icons/typescript.svg" alt="typescript" loading="lazy" />
+                    </article>
+                    <p>Typescript</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon react">
+                      <img src="./assets/images/icons/react.svg" alt="react" loading="lazy" />
+                    </article>
+                    <p>React</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon angular"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-brands fa-angular" style="font-size: 40px; color: #dd0031;"></i>
+                    </article>
+                    <p>Angular</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon tailwind">
+                      <img src="./assets/images/icons/tailwind.svg" alt="tailwind" loading="lazy" />
+                    </article>
+                    <p>Tailwind</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon framer"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-cube" style="font-size: 35px; color: #cc12d8;"></i>
+                    </article>
+                    <p>Framer Motion</p>
+                  </section>
+                </section>
+              </article>
+              <article class="all-skills__skill all-skills__skill--backend hidden fromRight">
+                <header>
+                  <h3>Backend</h3>
+                </header>
+                <section class="all-skills__icons">
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon node">
+                      <img src="./assets/images/icons/node-js.svg" alt="node" loading="lazy" />
+                    </article>
+                    <p>NodeJS</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon express">
+                      <img src="./assets/images/icons/express.svg" alt="express" loading="lazy" />
+                    </article>
+                    <p>ExpressJS</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon mysql">
+                      <img src="./assets/images/icons/mysql.svg" alt="mysql" loading="lazy" />
+                    </article>
+                    <p>MySQL</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon mongodb">
+                      <img src="./assets/images/icons/mongodb.svg" alt="mongodb" loading="lazy" />
+                    </article>
+                    <p>MongoDB</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon api">
+                      <img src="./assets/images/icons/api.svg" alt="api" loading="lazy" />
+                    </article>
+                    <p>REST API</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon python">
+                      <img src="./assets/images/icons/python.svg" alt="python" loading="lazy" />
+                    </article>
+                    <p>Python</p>
+                  </section>
+                </section>
+              </article>
+              <article class="all-skills__skill all-skills__skill--fundamentals hidden fromRight">
+                <header>
+                  <h3>CS Fundamentals</h3>
+                </header>
+                <section class="all-skills__icons">
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon dsa"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-network-wired" style="font-size: 35px; color: #4ade80;"></i>
+                    </article>
+                    <p>DSA</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon oop"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-cubes" style="font-size: 35px; color: #b026ff;"></i>
+                    </article>
+                    <p>OOP</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon dbms"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-database" style="font-size: 35px; color: #00bcd4;"></i>
+                    </article>
+                    <p>DBMS</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon os"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-microchip" style="font-size: 35px; color: #ffaa00;"></i>
+                    </article>
+                    <p>OS</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon networks"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-globe" style="font-size: 35px; color: #1fccff;"></i>
+                    </article>
+                    <p>Networks</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon aiml"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-brain" style="font-size: 35px; color: #ff00c8;"></i>
+                    </article>
+                    <p>AI/ML</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon swe"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-laptop-code" style="font-size: 35px; color: #ffffff;"></i>
+                    </article>
+                    <p>SWE Principles</p>
+                  </section>
+                </section>
+              </article>
+              <article class="all-skills__skill all-skills__skill--other hidden fromRight">
+                <header>
+                  <h3>Other</h3>
+                </header>
+                <section class="all-skills__icons">
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon git">
+                      <img src="./assets/images/icons/git.svg" alt="git" loading="lazy" />
+                    </article>
+                    <p>Git</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon github">
+                      <img src="./assets/images/icons/github.svg" alt="github" loading="lazy" />
+                    </article>
+                    <p>Github</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon excel"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-file-excel" style="font-size: 35px; color: #107c41;"></i>
+                    </article>
+                    <p>Excel</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon vscode"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-code" style="font-size: 35px; color: #0078d7;"></i>
+                    </article>
+                    <p>VS Code</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon railway"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-train" style="font-size: 35px; color: #ffffff;"></i>
+                    </article>
+                    <p>Railway</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon vercel"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-caret-up" style="font-size: 40px; color: #ffffff;"></i>
+                    </article>
+                    <p>Vercel</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon netlify">
+                      <img src="./assets/images/icons/netlify.svg" alt="netlify" loading="lazy" />
+                    </article>
+                    <p>Netlify</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon clipchamp"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-video" style="font-size: 35px; color: #b026ff;"></i>
+                    </article>
+                    <p>Clipchamp</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon picsart"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-camera-retro" style="font-size: 35px; color: #ff00c8;"></i>
+                    </article>
+                    <p>Picsart</p>
+                  </section>
+                  <section class="all-skills__container">
+                    <article class="all-skills__icon socialm"
+                      style="display: flex; align-items: center; justify-content: center;">
+                      <i class="fa-solid fa-users" style="font-size: 35px; color: #4ade80;"></i>
+                    </article>
+                    <p>Community Management</p>
+                  </section>
+                </section>
+              </article>
+            </section>
+          </section>
+        </div>
+      </div>
+
+      <div class="container-contact">
+        <div class="wrapper">
+          <section class="contact hidden" id="contact">
+            <h2 class="contact__heading">Contact</h2>
+            <div class="contact__content">
+              <p class="contact__text">
+                I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want
+                to say hi, my inbox is always open!
+              </p>
+              <a href="mailto:abhimsdnav@gmail.com" class="contact__mailto" target="_blank" rel="noopener noreferrer">
+                <button class="button button--contact-large">Say Hello</button>
+              </a>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/8bb946769b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </div>
+</body>
+
+</html>
